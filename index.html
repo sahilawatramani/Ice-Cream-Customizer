@@ -15,47 +15,83 @@
             <h2>Choose Your Ingredients</h2>
             <div class="ingredients-grid">
                 
-<div class="column">
-    <h3>Cones</h3>
-    <img src="./static/images/normal.jpeg" alt="Normal Cone" class="item cone" draggable="true" data-ingredient="Normal">
-    <img src="./static/images/waffle.jpeg" alt="Waffle Cone" class="item cone" draggable="true" data-ingredient="Waffle">
-</div>
-
-
-<div class="column">
-    <h3>Scoops</h3>
-    <img src="./static/images/vanilla.jpeg" alt="Vanilla" class="item scoop" draggable="true" data-ingredient="Vanilla">
-    <img src="./static/images/chocolate.jpeg" alt="Chocolate" class="item scoop" draggable="true" data-ingredient="Chocolate">
-    <img src="./static/images/strawberry.jpeg" alt="Strawberry" class="item scoop" draggable="true" data-ingredient="Strawberry">
-    <img src="./static/images/butterscotch.jpeg" alt="Butterscotch" class="item scoop" draggable="true" data-ingredient="Butterscotch">
-    <img src="./static/images/mango.jpeg" alt="Mango" class="item scoop" draggable="true" data-ingredient="Mango">
-    <img src="./static/images/pistachio.jpeg" alt="Pistachio" class="item scoop" draggable="true" data-ingredient="Pistachio">
-</div>
-
-
-<div class="column">
-    <h3>Toppings</h3>
-    <img src="./static/images/sprinkles.jpeg" alt="Sprinkles" class="item topping" draggable="true" data-ingredient="Sprinkles">
-    <img src="./static/images/syrup.jpeg" alt="Syrup" class="item topping" draggable="true" data-ingredient="Syrup">
-    <img src="./static/images/chocochip.jpeg" alt="Chocolate Chips" class="item topping" draggable="true" data-ingredient="Chocolate chips">
-    <img src="./static/images/cereal.jpeg" alt="Cereal" class="item topping" draggable="true" data-ingredient="Cereal">
-    <img src="./static/images/oreo.jpeg" alt="Oreo" class="item topping" draggable="true" data-ingredient="Oreo">
-</div>
+                <div class="scrollable-container">
+                    <div class="column">
+                        <h3>Cones</h3>
+                        <div class="ingredient-item">
+                            <img src="./static/images/normal.jpeg" alt="Normal Cone" class="item cone" draggable="true" data-ingredient="Normal">
+                            <p class="ingredient-name">Normal Cone</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/waffle.jpeg" alt="Waffle Cone" class="item cone" draggable="true" data-ingredient="Waffle">
+                            <p class="ingredient-name">Waffle Cone</p>
+                        </div>
+                    </div>
+                
+                    <div class="column">
+                        <h3>Scoops</h3>
+                        <div class="ingredient-item">
+                            <img src="./static/images/vanilla.jpeg" alt="Vanilla" class="item scoop" draggable="true" data-ingredient="Vanilla">
+                            <p class="ingredient-name">Vanilla</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/chocolate.jpeg" alt="Chocolate" class="item scoop" draggable="true" data-ingredient="Chocolate">
+                            <p class="ingredient-name">Chocolate</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/strawberry.jpeg" alt="Strawberry" class="item scoop" draggable="true" data-ingredient="Strawberry">
+                            <p class="ingredient-name">Strawberry</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/butterscotch.jpeg" alt="Butterscotch" class="item scoop" draggable="true" data-ingredient="Butterscotch">
+                            <p class="ingredient-name">Butterscotch</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/mango.jpeg" alt="Mango" class="item scoop" draggable="true" data-ingredient="Mango">
+                            <p class="ingredient-name">Mango</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/pistachio.jpeg" alt="Pistachio" class="item scoop" draggable="true" data-ingredient="Pistachio">
+                            <p class="ingredient-name">Pistachio</p>
+                        </div>
+                    </div>
+                
+                    <div class="column">
+                        <h3>Toppings</h3>
+                        <div class="ingredient-item">
+                            <img src="./static/images/sprinkles.jpeg" alt="Sprinkles" class="item topping" draggable="true" data-ingredient="Sprinkles">
+                            <p class="ingredient-name">Sprinkles</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/syrup.jpeg" alt="Syrup" class="item topping" draggable="true" data-ingredient="Syrup">
+                            <p class="ingredient-name">Syrup</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/chocochip.jpeg" alt="Chocolate Chips" class="item topping" draggable="true" data-ingredient="Chocolate chips">
+                            <p class="ingredient-name">Chocolate Chips</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/cereal.jpeg" alt="Cereal" class="item topping" draggable="true" data-ingredient="Cereal">
+                            <p class="ingredient-name">Cereal</p>
+                        </div>
+                        <div class="ingredient-item">
+                            <img src="./static/images/oreo.jpeg" alt="Oreo" class="item topping" draggable="true" data-ingredient="Oreo">
+                            <p class="ingredient-name">Oreo</p>
+                        </div>
+                    </div>
+                </div>
+                
 
             </div>
         </section>
         
         <section class="preview">
             <h2>Your Ice Cream</h2>
-            <div id="ice-cream" class="drop-zone">
-                <p>Drag ingredients here!</p>
-            </div>
-            <p id="amount-display">Total: ₹0</p>
-        </section>        
-    </div>
-    <footer class="footer">
-        <button id="reset">Reset</button>
-    </footer>
+            <div id="ice-cream">
+                <div class="title">Drag ingredients here</div>
+              </div>
+              <div id="amount-display">Total: ₹0</div>
+              <button id="reset">Reset</button>
     <script src="./static/script.js"></script>
 </body>
 </html>
